@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MyNotes"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#111111"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat reminder cantik untuk widget homescreen Android."
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:paddingBottom="18dp" />
+
+        <TextView
+            android:id="@+id/previewNote"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="Jangan lupa rapat jam 09.00"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#111111"
+            android:background="@drawable/preview_note_bg" />
+
+        <EditText
+            android:id="@+id/inputReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tulis reminder..."
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="18dp"
+            android:padding="14dp"
+            android:background="@drawable/input_bg" />
+
+        <TextView style="@style/LabelStyle" android:text="Font" />
+        <Spinner android:id="@+id/spinnerFont" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView style="@style/LabelStyle" android:text="Warna Text" />
+        <Spinner android:id="@+id/spinnerTextColor" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView style="@style/LabelStyle" android:text="Ukuran Font" />
+        <Spinner android:id="@+id/spinnerFontSize" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView style="@style/LabelStyle" android:text="Warna Notes" />
+        <Spinner android:id="@+id/spinnerNoteColor" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="22dp"
+            android:text="Simpan / Update Widget"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Setelah disimpan, tambahkan widget MyNotes dari menu Widget di homescreen Android."
+            android:textSize="13sp"
+            android:textColor="#666666" />
+    </LinearLayout>
+</ScrollView>
